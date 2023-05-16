@@ -15,7 +15,6 @@ export default function Home() {
           I'm a blazingly fast frontend developer and passionate 
           about all kinds of interface development. I pride myself
           in working very fast, without any sacrifice on quality. 
-          I'm available for freelance work!
         </h4>
         <div className="flex flex-row">
           <div className="mt-6">
