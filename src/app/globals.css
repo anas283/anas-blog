@@ -5,3 +5,12 @@
 body {
   overflow-x: hidden;
 }
+
+.text-gradient {
+  color: #9175fc;
+  background-image: -webkit-linear-gradient(0deg,#3c6ec4 15%,#4667c9 20%,#9b3eb7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
