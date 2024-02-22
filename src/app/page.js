@@ -71,7 +71,7 @@ export default function Home() {
                     to Next.js.
                   </h6>
                   <a 
-                    href="https://www.kad-digital.com/"
+                    href="https://kad-digital-next.vercel.app/"
                     target="_blank"
                     className="bg-slate-900 hover:bg-slate-700 text-sm text-white font-medium py-3 px-8 rounded"
                   >
@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <div className="order-1 md:order-2 pt-5">
                 <a 
-                  href="https://www.kad-digital.com/"
+                  href="https://kad-digital-next.vercel.app/"
                   target="_blank"
                   className="w-100 h-64 md:w-1/2 mb-10 cursor-pointer md:pr-2"
                 >

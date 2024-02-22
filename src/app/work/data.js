@@ -14,6 +14,6 @@ export const workData = [
     badge: "Side project",
     title: "Kad Digital",
     description: "This is website I built using React.js and Bootstrap but then migrated to Next.js.",
-    link: "https://www.kad-digital.com"
+    link: "https://kad-digital-next.vercel.app/"
   },
 ]
