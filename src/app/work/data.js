@@ -1,7 +1,15 @@
+import LinkwajoPreview from "../../../public/linkwajo-preview.png";
 import CoworkingPreview from "../../../public/coworking-preview.png";
 import KadDigitalPreview from "../../../public/kad-digital-preview.png";
 
 export const workData = [
+  {
+    image: LinkwajoPreview,
+    badge: "Side project",
+    title: "Linkwajo",
+    description: "Linkwajo is a simple link in bio tool. Built with Next.js and Tailwind",
+    link: "https://www.linkwajo.com"
+  },
   {
     image: CoworkingPreview,
     badge: "Side project",
@@ -14,6 +22,6 @@ export const workData = [
     badge: "Side project",
     title: "Kad Digital",
     description: "This is website I built using React.js and Bootstrap but then migrated to Next.js.",
-    link: "https://kad-digital-next.vercel.app/"
+    link: "https://kad-digital-next.vercel.app"
   },
 ]

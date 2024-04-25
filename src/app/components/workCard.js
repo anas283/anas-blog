@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const WorkCard = ({ data }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-100">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 w-100">
       <div className="pt-10">
         <a 
           href={data.link}

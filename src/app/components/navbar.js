@@ -20,7 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex max-w-screen-lg mx-auto items-center justify-between px-6 pt-6 md:px-0 overflow-x-hidden">
+    <div className="flex max-w-screen-lg mx-auto items-center justify-between px-6 pt-6 lg:px-0 overflow-x-hidden">
       <div className="flex justify-between w-full">
         <Link href="/">
           <Image src={LogoImage} alt="profile" className="w-10 h-10" />
