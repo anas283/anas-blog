@@ -8,7 +8,7 @@ import Contact from "./components/contact";
 
 export default function Home() {
   return (
-    <main className="relative overflow-x-hidden bg-pattern">
+    <main className="relative overflow-hidden bg-pattern">
       <div className="flex max-w-screen-md mx-auto min-h-screen px-6 pt-12 lg:px-0">
         <div className="w-full">
           <div className="w-full pb-8 mb-8 border-b">
