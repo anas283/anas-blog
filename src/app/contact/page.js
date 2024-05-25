@@ -1,13 +1,15 @@
-import { Button } from "@/components/ui/button"
+'use client';
 
-export const metadata = {
-  title: 'Contact | Anas',
-  description: 'Frontend Developer',
-}
+import { Button } from "@/components/ui/button"
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, translateY: 20 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ type: 'spring', duration: 0.4 }}
+    >
       <h4 className="text-lg font-semibold">Get In Touch</h4>
       <p className="text-md text-slate-700 font-normal mt-1">
         If you are interested in contacting me, please do not hesitate 
@@ -21,7 +23,7 @@ const Contact = () => {
           Contact Me
         </Button>
       </a>
-    </div>
+    </motion.div>
   )
 }
 
