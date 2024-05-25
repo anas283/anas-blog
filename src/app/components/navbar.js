@@ -26,6 +26,8 @@ const tabs = [
   }
 ]
 
+const pagesWithTab = ['/', '/blogs', '/uses', '/contact']
+
 const Tab = ({ text, url, selected, setSelected }) => {
   return (
     <Link
@@ -65,7 +67,7 @@ const Navbar = () => {
     else if (pathname === '/contact') {
       setSelected(tabs[3].title)
     }
-  },[])
+  },[pathname])
 
   return (
     <div>
@@ -96,17 +98,19 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="mb-8 flex flex-wrap items-center gap-2">
-            {tabs.map((tab, index) => (
-              <Tab
-                text={tab.title}
-                url={tab.url}
-                selected={selected === tab.title}
-                setSelected={setSelected}
-                key={tab.title}
-              />
-            ))}
-          </div>
+          {pagesWithTab.includes(pathname) &&
+            <div className="mb-8 flex flex-wrap items-center gap-2">
+              {tabs.map((tab, index) => (
+                <Tab
+                  text={tab.title}
+                  url={tab.url}
+                  selected={selected === tab.title}
+                  setSelected={setSelected}
+                  key={tab.title}
+                />
+              ))}
+            </div>
+          }
         </div>
       </div>
     </div>

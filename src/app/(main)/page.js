@@ -1,20 +1,10 @@
 'use client';
 
 import { Badge } from "@/components/ui/badge"
-import { motion } from 'framer-motion'
-import Head from "next/head";
 
 export default function Home() {
   return (
-    <motion.div
-      initial={{ opacity: 0, translateY: 20 }}
-      animate={{ opacity: 1, translateY: 0 }}
-      transition={{ type: 'spring', duration: 0.4 }}
-    >
-      <Head>
-        <title>My page title</title>
-      </Head>
-
+    <div>
       <h4 className="text-md text-slate-700 font-normal">
         Frontend Developer with 3 years of experience. I do web stuff. 
         Mostly Angular, React, Next.js and Tailwind. I pride myself in 
@@ -100,6 +90,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }

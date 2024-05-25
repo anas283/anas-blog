@@ -1,14 +1,6 @@
-'use client';
-
-import { motion } from 'framer-motion'
-
 export default function Uses() {
   return (
-    <motion.div
-      initial={{ opacity: 0, translateY: 20 }}
-      animate={{ opacity: 1, translateY: 0 }}
-      transition={{ type: 'spring', duration: 0.4 }}
-    >
+    <div>
       <h4 className="text-md text-slate-700 font-normal">
         My ever-evolving toolkit, comprising both hardware and software. I try to keep this list updated as much as possible.
       </h4>
@@ -50,6 +42,6 @@ export default function Uses() {
           <span className="text-sm text-gray-500">For wireframing & prototyping</span>
         </li>
       </ul>
-    </motion.div>
+    </div>
   )
 }
