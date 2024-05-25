@@ -1,10 +1,10 @@
 import './globals.css'
-import { Space_Grotesk } from 'next/font/google'
+import { Instrument_Sans } from 'next/font/google'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import { Analytics } from '@vercel/analytics/react';
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
+const instrumentSans = Instrument_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Anas - Frontend Developer',
@@ -14,8 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>
-        <Navbar />
+      <body className={instrumentSans.className}>
+        {/* <Navbar /> */}
         {children}
         <Analytics />
         <Footer />
