@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Blogs | Anas',
+  description: 'Frontend Developer',
+}
+
 export default function Blogs() {
   return (
     <div className="w-full flex flex-col gap-6">

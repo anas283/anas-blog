@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="flex max-w-screen-md mx-auto items-center justify-center px-6 py-6 md:px-0 overflow-x-hidden">
+    <div className="mt-10 flex max-w-screen-md mx-auto items-center justify-center px-6 py-6 md:px-0 overflow-x-hidden">
       <div className="flex flex-col gap-2.5">
         <svg
           xmlns="http://www.w3.org/2000/svg"

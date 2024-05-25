@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button"
 
+export const metadata = {
+  title: 'Contact | Anas',
+  description: 'Frontend Developer',
+}
+
 const Contact = () => {
   return (
     <div>

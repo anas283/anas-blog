@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Uses | Anas',
+  description: 'Frontend Developer',
+}
+
 export default function Uses() {
   return (
     <div>
@@ -10,12 +15,12 @@ export default function Uses() {
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">Macbook Air (13", 2020)</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">Probably one of the best investments I have ever made!</span>
+          <span className="text-sm text-gray-500">Probably one of the best investments I have ever made!</span>
         </li>
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">AirPods Pro 2</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">The best wireless earphones I have ever used</span>
+          <span className="text-sm text-gray-500">The best wireless earphones I have ever used</span>
         </li>
       </ul>
 
@@ -24,22 +29,22 @@ export default function Uses() {
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">VS Code</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">Favorite code editor</span>
+          <span className="text-sm text-gray-500">Favorite code editor</span>
         </li>
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">Chrome</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">Browser of choice</span>
+          <span className="text-sm text-gray-500">Browser of choice</span>
         </li>
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">Notion</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">For notes and personal planner</span>
+          <span className="text-sm text-gray-500">For notes and personal planner</span>
         </li>
         <li className="space-x-1">
           <span className="font-medium text-sm text-gray-900">Figma</span>
           <span>-</span>
-          <span class="text-sm text-gray-500">For wireframing & prototyping</span>
+          <span className="text-sm text-gray-500">For wireframing & prototyping</span>
         </li>
       </ul>
     </div>
