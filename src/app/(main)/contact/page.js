@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-const Contact = () => {
+export default function Contact() {
   return (
     <div>
       <h4 className="text-lg font-semibold">Get In Touch</h4>
@@ -20,4 +20,10 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export function generateMetadata() {
+  const title = 'Contact | Anas';
+
+  return {
+    title,
+  };
+}

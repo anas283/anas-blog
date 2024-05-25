@@ -33,3 +33,11 @@ export default function Blogs() {
     </div>
   )
 }
+
+export function generateMetadata() {
+  const title = 'Blogs | Anas';
+
+  return {
+    title,
+  };
+}

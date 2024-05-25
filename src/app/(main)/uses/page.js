@@ -45,3 +45,11 @@ export default function Uses() {
     </div>
   )
 }
+
+export function generateMetadata() {
+  const title = 'Uses | Anas';
+
+  return {
+    title,
+  };
+}
