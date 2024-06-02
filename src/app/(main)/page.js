@@ -30,7 +30,22 @@ export default function Home() {
 
       <div className="mt-16">
         <h4 className="text-lg font-semibold">Projects</h4>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-x-6">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a 
+            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
+            href="https://wordle-game-lime.vercel.app/"
+            target="_blank"
+          >
+            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
+              W
+            </div>
+            <h5 className="text-sm font-medium mt-3">Wordle Game</h5>
+            <p className="text-slate-600 text-sm mt-1">
+              A word game that test your puzzle skills to solve.
+            </p>
+            <Badge variant="outline" className="font-normal mt-2">Angular</Badge>
+          </a>
+
           <a 
             className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
             href="https://www.linkwajo.com"
@@ -43,6 +58,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm mt-1">
               A simple link in bio tool for product focused user.
             </p>
+            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
           </a>
 
           <a 
@@ -57,6 +73,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm mt-1">
               A basic coworking space landing page.
             </p>
+            <Badge variant="outline" className="font-normal mt-2">HTML</Badge>
           </a>
 
           <a 
@@ -71,6 +88,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm mt-1">
               Wedding card generator with awesome features.
             </p>
+            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
           </a>
 
           <a 
@@ -85,6 +103,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm mt-1">
               My personal website and blogs.
             </p>
+            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
           </a>
         </div>
       </div>
