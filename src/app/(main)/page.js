@@ -93,13 +93,13 @@ export default function Home() {
 
           <a 
             className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://heyanas.com"
+            href="https://heyanas.dev"
             target="_blank"
           >
             <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
               A
             </div>
-            <h5 className="text-sm font-medium mt-3">Heyanas.com</h5>
+            <h5 className="text-sm font-medium mt-3">Heyanas.dev</h5>
             <p className="text-slate-600 text-sm mt-1">
               My personal website and blogs.
             </p>
