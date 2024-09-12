@@ -33,6 +33,21 @@ export default function Home() {
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           <a 
             className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
+            href="https://toolhive.one"
+            target="_blank"
+          >
+            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
+              T
+            </div>
+            <h5 className="text-sm font-medium mt-3">Toolhive</h5>
+            <p className="text-slate-600 text-sm mt-1">
+              All-in-One online tools for productivity & workflow
+            </p>
+            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
+          </a>
+
+          <a 
+            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
             href="https://wordle-game-lime.vercel.app/"
             target="_blank"
           >
