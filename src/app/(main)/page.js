@@ -1,19 +1,87 @@
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { works } from "@/data/works"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div>
-      <h4 className="text-md text-slate-700 font-normal">
-        Frontend Developer with 3 years of experience. I do web stuff. 
-        Mostly Angular, React, Next.js and Tailwind. I pride myself in 
-        working fast, without any sacrifice on quality.
-      </h4>
+    <div className="w-full">
+
+      <div className="pb-10 flex flex-col gap-3">
+        <h1 className="text-4xl font-extrabold max-w-2xl">
+          Building Beautiful Digital Experiences That Users Will Love
+        </h1>
+        <h4 className="text-sm text-slate-700 font-normal max-w-md">
+          Frontend Developer with 3 years of experience. I do web stuff. 
+          Mostly Angular, React, Next.js and Tailwind. I pride myself in 
+          working fast, without any sacrifice on quality.
+        </h4>
+        <div className="w-full mt-2 flex flex-wrap gap-3">
+          <Link href="/projects">
+            <Button>
+              Explore my work
+            </Button>
+          </Link>
+          <a 
+            href="mailto:muhammadanasbinadam@gmail.com"
+            target="_blank"
+          >
+            <Button variant="outline">
+              Contact me
+            </Button>
+          </a>
+          <div className="flex flex-row gap-3 items-center px-2">
+            <a href="https://github.com/anas283" target="_blank" className="ease-in-out duration-200 hover:text-lime-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anas283/" target="_blank" className="ease-in-out duration-200 hover:text-lime-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <h4 className="text-lg font-semibold">Projects</h4>
+        <hr className="mt-2" />
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6">
+          {works.map((data, key) => {
+            return (
+              <a 
+                className="group h-96 md:h-80 ease-in-out duration-150 hover:-translate-y-2 flex flex-col gap-2"
+                href={data.link}
+                target="_blank"
+                key={key}
+              >
+                <div className="border rounded-md overflow-hidden lg:max-w-[300px]">
+                  <Image src={data.image} />
+                </div>
+                <div className="flex items-center">
+                  <div>
+                    <h5 className="text-md font-semibold mt-3">
+                      {data.title}
+                    </h5>
+                    <p className="text-slate-600 text-sm mt-1">
+                      {data.subtitle}
+                    </p>
+                    <Badge variant="outline" className="font-normal mt-2">
+                      {data.tag}
+                    </Badge>
+                  </div>
+                </div>
+              </a>
+            )
+          })}
+        </div>
+      </div>
 
       <div className="mt-16">
         <h4 className="text-lg font-semibold">Experience</h4>
+        <hr className="mt-2" />
         <div className="flex flex-col mt-4 ml-1.5">
           <div className="border-l border-slate-300 pl-4 pb-4 relative">
-            <span className="flex w-2.5 h-2.5 rounded-full bg-slate-600 absolute top-2 -left-1.5"></span>
+            <span className="flex w-2.5 h-2.5 rounded-full bg-lime-500 absolute top-2 -left-1.5"></span>
             <div className="flex flex-row gap-3">
               <h5 className="font-medium">Front-End Developer</h5>
               <Badge variant="outline" className="font-normal">Present</Badge>
@@ -25,101 +93,6 @@ export default function Home() {
             <h5 className="font-medium">Front-End Developer</h5>
             <h6 className="text-slate-600 text-sm mt-0.5">TriSquare Technology (M) Sdn Bhd</h6>
           </div>
-        </div>
-      </div>
-
-      <div className="mt-16">
-        <h4 className="text-lg font-semibold">Projects</h4>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://toolhive.one"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              T
-            </div>
-            <h5 className="text-sm font-medium mt-3">Toolhive</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              All-in-One online tools for productivity & workflow
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
-          </a>
-
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://wordle-game-lime.vercel.app/"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              W
-            </div>
-            <h5 className="text-sm font-medium mt-3">Wordle Game</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              A word game that test your puzzle skills to solve.
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">Angular</Badge>
-          </a>
-
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://www.linkwajo.com"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              L
-            </div>
-            <h5 className="text-sm font-medium mt-3">Linkwajo</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              A simple link in bio tool for product focused user.
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
-          </a>
-
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://coca-coworking.vercel.app"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              C
-            </div>
-            <h5 className="text-sm font-medium mt-3">Coworking</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              A basic coworking space landing page.
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">HTML</Badge>
-          </a>
-
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://kad-digital-next.vercel.app"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              K
-            </div>
-            <h5 className="text-sm font-medium mt-3">Kad Digital</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              Wedding card generator with awesome features.
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
-          </a>
-
-          <a 
-            className="group h-36 ease-in-out duration-150 hover:-translate-y-2"
-            href="https://heyanas.dev"
-            target="_blank"
-          >
-            <div className="w-8 h-8 rounded-md bg-slate-900 flex justify-center items-center text-white ease-in-out duration-200 group-hover:-rotate-12 group-hover:bg-blue-500">
-              A
-            </div>
-            <h5 className="text-sm font-medium mt-3">Heyanas.dev</h5>
-            <p className="text-slate-600 text-sm mt-1">
-              My personal website and blogs.
-            </p>
-            <Badge variant="outline" className="font-normal mt-2">Next.js</Badge>
-          </a>
         </div>
       </div>
     </div>

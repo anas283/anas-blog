@@ -6,7 +6,10 @@ export default function Blogs() {
   const allPosts = getAllPosts();
 
   return (
-    <div>
+    <div className="w-full">
+      <h4 className="text-3xl text-slate-900 font-bold text-center mb-10">
+        Blogs
+      </h4>
       <div className="w-full flex flex-col gap-6">
         {allPosts.map((post, key) => {
           return (
