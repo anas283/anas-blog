@@ -13,7 +13,7 @@ export default function Home() {
           Building Beautiful Digital Experiences That Users Will Love
         </h1>
         <h4 className="text-sm text-slate-700 font-normal max-w-md">
-          Frontend Developer with 3 years of experience. I do web stuff. 
+          Frontend Developer with 4 years of experience. I do web stuff. 
           Mostly Angular, React, Next.js and Tailwind. I pride myself in 
           working fast, without any sacrifice on quality.
         </h4>
