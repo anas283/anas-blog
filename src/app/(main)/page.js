@@ -55,7 +55,7 @@ export default function Home() {
                 key={key}
               >
                 <div className="border rounded-md overflow-hidden lg:max-w-[300px]">
-                  <Image src={data.image} />
+                  <Image src={data.image} alt={data.title} />
                 </div>
                 <div className="flex items-center">
                   <div>
