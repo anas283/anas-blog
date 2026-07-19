@@ -18,7 +18,7 @@ export default function Projects() {
               key={key}
             >
               <div className="border rounded-md overflow-hidden md:max-w-[300px]">
-                <Image src={data.image} />
+                <Image src={data.image} alt={data.title} priority={key === 0} />
               </div>
               <div className="flex items-center">
                 <div>

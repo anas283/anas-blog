@@ -7,8 +7,8 @@ const instrumentSans = Instrument_Sans({ subsets: ['latin'] })
 const manrope = Manrope({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Anas | Frontend Developer',
-  description: 'Frontend Developer',
+  title: 'Anas | Software Engineer',
+  description: 'Software Engineer',
 }
 
 export default function RootLayout({ children }) {

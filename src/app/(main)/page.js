@@ -13,7 +13,7 @@ export default function Home() {
           Building Beautiful Digital Experiences That Users Will Love
         </h1>
         <h4 className="text-sm text-slate-700 font-normal max-w-md">
-          Frontend Developer with 4 years of experience. I do web stuff. 
+          Software Engineer with 5 years of experience. I do web stuff.
           Mostly Angular, React, Next.js and Tailwind. I pride myself in 
           working fast, without any sacrifice on quality.
         </h4>
@@ -55,7 +55,7 @@ export default function Home() {
                 key={key}
               >
                 <div className="border rounded-md overflow-hidden lg:max-w-[300px]">
-                  <Image src={data.image} alt={data.title} />
+                  <Image src={data.image} alt={data.title} priority={key === 0} />
                 </div>
                 <div className="flex items-center">
                   <div>
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="border-l border-slate-300 pl-4 pb-4 relative">
             <span className="flex w-2.5 h-2.5 rounded-full bg-lime-500 absolute top-2 -left-1.5"></span>
             <div className="flex flex-row gap-3">
-              <h5 className="font-medium">Front-End Developer</h5>
+              <h5 className="font-medium">Software Engineer</h5>
               <Badge variant="outline" className="font-normal">Present</Badge>
             </div>
             <h6 className="text-slate-600 text-sm mt-0.5">Mode Fair Sdn Bhd</h6>
