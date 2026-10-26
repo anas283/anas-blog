@@ -24,7 +24,7 @@ export default function HeroCodeCard() {
         <span className="w-10" aria-hidden="true" />
       </div>
 
-      <pre className="relative overflow-x-auto p-5 font-mono text-[12px] leading-6 sm:p-6 sm:text-[13px]">
+      <pre className="relative overflow-x-auto p-5 font-mono text-[11px] leading-6 sm:p-6 sm:text-[13px]">
         <code>
           <span className="block">
             <span className={keyword}>const</span>{" "}
@@ -81,7 +81,7 @@ export default function HeroCodeCard() {
         </code>
       </pre>
 
-      <div className="relative flex items-center justify-between border-t border-white/10 px-5 py-3 font-mono text-[10px] text-white/35">
+      <div className="relative flex items-center justify-between border-t border-white/10 px-5 py-3 font-mono text-[10px] text-white/40">
         <span>UTF-8</span>
         <span className="inline-flex items-center gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full bg-primary" aria-hidden="true" />

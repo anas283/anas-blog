@@ -71,9 +71,9 @@ export default function Contact() {
           <p className="eyebrow">Email</p>
           <a
             href={`mailto:${EMAIL}`}
-            className="mt-4 block break-words font-display text-xl font-semibold tracking-tight underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:decoration-foreground sm:text-2xl"
+            className="mt-4 block break-words font-display text-lg font-semibold tracking-tight underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:decoration-foreground sm:text-2xl"
           >
-            {EMAIL}
+            muhammadanasbinadam@<wbr />gmail.com
           </a>
           <p className="mt-3 max-w-md text-sm leading-6 text-muted-foreground">
             Have a project, a role, or just a question? Tell me a little about

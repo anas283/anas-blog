@@ -58,7 +58,7 @@ export default function Home() {
         />
 
         <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-16">
-          <div>
+          <div className="min-w-0">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
@@ -122,14 +122,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[380px] lg:max-w-[430px]">
+          <div className="relative mx-auto w-full min-w-0 max-w-[380px] lg:max-w-[430px]">
             <div
               aria-hidden="true"
               className="absolute -inset-6 -z-10 rounded-[3rem] bg-primary/30 blur-3xl"
             />
             <div
               aria-hidden="true"
-              className="absolute -right-4 -top-4 -z-10 h-24 w-24 rotate-12 rounded-3xl bg-primary/70"
+              className="absolute -right-2 -top-4 -z-10 h-24 w-24 rotate-12 rounded-3xl bg-primary/70 sm:-right-4"
             />
 
             <HeroCodeCard />
@@ -241,7 +241,7 @@ export default function Home() {
           href={`mailto:${EMAIL}`}
           className="group inline-flex h-11 shrink-0 items-center gap-2 rounded-full border border-border bg-background px-5 text-sm font-medium transition-colors hover:border-foreground/25 hover:bg-muted"
         >
-          {EMAIL}
+          Say hello
           <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </section>
