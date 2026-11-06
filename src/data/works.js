@@ -3,8 +3,26 @@ import CoworkingImage from "../../public/coworking-preview.png"
 import KadDigitalImage from "../../public/kad-digital-preview.png"
 import LinkWajoImage from "../../public/linkwajo-preview.png"
 import WordleImage from "../../public/wordle-preview.png"
+import KedaiLinkImage from "../../public/kedailink-preview.png"
+import CorpusBrainImage from "../../public/corpusbrain-preview.png"
 
 export const works = [
+  {
+    id: 6,
+    title: "KedaiLink",
+    subtitle: "One link for all your products, with orders straight to WhatsApp.",
+    link: "https://kedailink.my/",
+    tag: "Next.js",
+    image: KedaiLinkImage,
+  },
+  {
+    id: 7,
+    title: "CorpusBrain",
+    subtitle: "A private document workspace with cited answers and structured extraction.",
+    link: "https://corpusbrain.com/",
+    tag: "Next.js",
+    image: CorpusBrainImage,
+  },
   {
     id: 1,
     title: "Toolhive",
