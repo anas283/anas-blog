@@ -36,3 +36,9 @@ next-env.d.ts
 
 # playwright-cli
 .playwright-cli
+/dist/
+.vinext/
+.cloudflare/
+
+# generated blog content
+/src/lib/posts.generated.json

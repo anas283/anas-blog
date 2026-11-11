@@ -1,6 +1,5 @@
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { notFound } from "next/navigation";
-import markdownToHtml from "@/lib/markdownToHtml";
 import DateFormatter from "@/components/date-formatter";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -12,7 +11,7 @@ export default async function BlogContent({ params }) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = post.html;
   const wordCount = (post.content || "").trim().split(/\s+/).filter(Boolean).length;
   const readingTime = Math.max(1, Math.round(wordCount / 200));
 
