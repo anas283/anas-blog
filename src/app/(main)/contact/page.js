@@ -9,7 +9,6 @@ import {
   MapPin,
   Clock,
   Sparkles,
-  Download,
 } from "lucide-react";
 
 const EMAIL = "muhammadanasbinadam@gmail.com"
@@ -88,12 +87,6 @@ export default function Contact() {
               </a>
             </Button>
             <CopyEmail email={EMAIL} />
-            <Button asChild variant="ghost" size="sm">
-              <a href="/resume_anas.pdf" target="_blank" rel="noreferrer">
-                <Download className="mr-1.5 h-3.5 w-3.5" />
-                Résumé
-              </a>
-            </Button>
           </div>
 
           <div className="mt-10 border-t border-border/70 pt-6">

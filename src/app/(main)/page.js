@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Compass, Download, Gauge, Github, Linkedin, MapPin, Rocket, Sparkles } from "lucide-react";
+import { ArrowUpRight, Compass, Gauge, Github, Linkedin, MapPin, Rocket, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/section-heading";
 import ProjectCard from "@/components/project-card";
@@ -85,13 +85,6 @@ export default function Home() {
                   <ArrowUpRight className="ml-1.5 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline">
-                <a href="/resume_anas.pdf" target="_blank" rel="noreferrer">
-                  <Download className="mr-1.5 h-4 w-4" />
-                  Résumé
-                </a>
-              </Button>
-
               <div className="ml-1 flex items-center gap-1">
                 <a
                   href="https://github.com/anas283"

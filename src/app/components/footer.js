@@ -16,7 +16,6 @@ const elsewhere = [
   { title: "GitHub", url: "https://github.com/anas283" },
   { title: "LinkedIn", url: "https://www.linkedin.com/in/anas283/" },
   { title: "Email", url: `mailto:${EMAIL}` },
-  { title: "Résumé", url: "/resume_anas.pdf" },
 ]
 
 const Footer = () => {
